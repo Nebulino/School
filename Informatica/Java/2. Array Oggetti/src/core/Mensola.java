@@ -37,4 +37,33 @@ public class Mensola {
         }
         return -1;
     }
+
+    public int cercaPosLibro(String nome){
+        int i;
+        for(i = 0; i < this.dim; i++){
+            if(this.volumi[i] != null) {
+                if(this.volumi[i].getTitolo().equalsIgnoreCase(nome)){
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+
+    public Libro cercaLibro(String nome){
+        int posizione = cercaPosLibro(nome);
+        if(posizione >= 0){
+            return this.volumi[posizione];
+        }
+        return null;
+    }
+
+    public int rimuoviLibro(String titolo){
+        int posizione = cercaPosLibro(titolo);
+        if(posizione >= 0){
+            this.volumi[posizione] = null;
+            return posizione;
+        }
+        return -1;
+    }
 }
