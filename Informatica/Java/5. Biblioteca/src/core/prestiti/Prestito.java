@@ -3,7 +3,6 @@ package core.prestiti;
 import core.biblioteca.Libro;
 
 import java.util.Calendar;
-import java.util.Date;
 
 public class Prestito {
     private Utente utente;

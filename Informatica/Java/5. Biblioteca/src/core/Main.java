@@ -1,10 +1,7 @@
 package core;
 
-import core.biblioteca.Biblioteca;
-import core.biblioteca.Libro;
-import core.prestiti.Prestiti;
-import core.prestiti.Prestito;
-import core.prestiti.Utente;
+import core.biblioteca.*;
+import core.prestiti.*;
 import java.util.Scanner;
 
 public class Main {
