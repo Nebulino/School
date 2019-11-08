@@ -2,7 +2,7 @@ package core.biblioteca;
 
 public class Biblioteca {
     private final int DIM = 1000;
-    Libro[] libri;
+    private Libro[] libri;
 
     public Biblioteca(){
         libri = new Libro[DIM];
